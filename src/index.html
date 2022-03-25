@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Food Tracker App</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1><a href="#">My Nutrition</a></h1>
+    </nav>
+
+    <main>
+      <h3>Add food</h3>
+
+      <form action="" class="form" id="form">
+        <div class="form-group food-name">
+          <label for="food-name">Food name:</label>
+          <select name="food-name" id="food-name">
+            <option value="Please select">Please select</option>
+            <option value="Fish and chips">Fish and chips</option>
+            <option value="Karjalanpaisti">Karjalanpaisti</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Prinsessakakku">Prinsessakakku</option>
+          </select>
+        </div>
+
+        <div class="form-group food-values">
+          <label for="carbs">Carbs:</label>
+          <input type="number" name="carbs" id="input-carbs" placeholder="0g" />
+        </div>
+
+        <div class="form-group food-values">
+          <label for="protein">Protein:</label>
+          <input type="number" name="protein" id="input-protein" placeholder="0g" />
+        </div>
+
+        <div class="form-group food-values">
+          <label for="fat">Fat:</label>
+          <input type="number" name="fat" id="input-fat" placeholder="0g" />
+        </div>
+
+        <div class="flex-end">
+          <button class="btn btn-add" type="submit">Add</button>
+        </div>
+      </form>
+
+      <section class="stats">
+        <h3>Stats</h3>
+        <canvas class="food-chart" id="food-chart" width="600" height="400"></canvas>
+      </section>
+
+      <section class="log">
+        <h3>Log</h3>
+        <div class="total-calories" id="total-calories">
+          <p>Total calories logged: <span id="display-calories">0</span></p>
+        </div>
+      </section>
+
+      <section class="food-cards" id="food-cards"></section>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

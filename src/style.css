@@ -1,0 +1,190 @@
+:root {
+  --mono: "Roboto Mono", monospace;
+  --sans: "Roboto", sans-serif;
+  --white: #ecf2fa;
+  --black: #171321;
+  --plum: #4b0d49;
+  --aqua: #86fbfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--sans);
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  background-color: #f7f8fa;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #69013b;
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 400;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+form {
+  /* border: 1px solid black; */
+  max-width: 250px;
+  margin-bottom: 4rem;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: var(--mono);
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border-style: none;
+  font-family: var(--mono);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input:focus-within,
+select:focus-within {
+  border: 2px solid #69013b;
+  margin: -2px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group.food-values {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.food-values input {
+  justify-self: end;
+  max-width: 100px;
+  text-align: right;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 0.5rem 0;
+  width: 100px;
+  font-size: 1.1rem;
+  background-color: #69013b;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: var(--plum);
+  cursor: pointer;
+}
+
+.btn:focus {
+  /* outline: var(--aqua); */
+  border: 1px solid var(--aqua);
+}
+
+.total-calories {
+  border: 2px solid #69013b;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.log {
+  margin: 3rem 0;
+}
+
+.total-calories p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.total-calories span {
+  font-weight: 700;
+}
+
+.food-cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  background-color: #f7f8fa;
+  border-radius: 7px;
+  margin: 1.2rem 0.8rem;
+  padding: 2rem 0.8rem;
+  text-align: center;
+  min-width: 300px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  font-style: italic;
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  justify-content: baseline;
+}
+
+.card ul li {
+  margin: 0.75rem;
+}
+
+.carbs-dot {
+  font-size: 1.7rem;
+  color: #86fbfb;
+}
+.protein-dot {
+  font-size: 1.7rem;
+  color: #e310cb;
+}
+.fat-dot {
+  font-size: 1.7rem;
+  color: #ffe100;
+}
